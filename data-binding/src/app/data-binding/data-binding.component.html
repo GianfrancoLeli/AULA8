@@ -1,0 +1,47 @@
+<section>
+    <!--<article>
+        <h3>Interpolação (Bigodinho XD)</h3>
+        <p>String Realizada com Interpolação: {{ url }}</p>
+        <p>Resultado de 1+1 não e: {{ 1 + 1 + getvalor() }}</p>
+    </article>
+
+    <article>
+        <h3>Binding de Propiedade</h3>
+        <img src="{{ urlImagen }}" alt="">
+        <img src="{{ urlImagen }}" alt="">
+        <img src="{{ urlImagen }}" alt="">
+
+        <br>
+        <label for="">Nome do Curso:</label>
+        <input type="text" [value]="nome_curso">
+    </article>-->
+
+    <article>
+        <h3>
+            Class e Style Binding
+        </h3>
+        Selecione uma Classe:
+
+        <select #classe (change)='0'>
+            <option value="verde">Verde</option>
+            <option value="azul">Azul</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="laranja">Laranja</option>
+        </select>
+           
+            <br><br>
+
+          
+                A classe selecionada é: {{ classe.value }}
+
+                <p [class]="classe.value" [style]="{'font-weight':'bold', 'font-size': '30px'}" >Um texto para ser colorido</p>
+
+                
+
+
+                <p [style.display] = "classe.value == 'vermelho' ? 'block' : 'none'" [class]="classe.value">Meu Deus!! Você é doido!!
+
+                </p>
+                
+     </article>
+</section>
